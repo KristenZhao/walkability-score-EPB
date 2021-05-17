@@ -1,0 +1,25 @@
+`1.data preparation` contains sql scripts that:
+
+-take edge table ( city_[projection]_edges[_modifications] ) and create an
+edge_table with pgr_createTopology ( city_projection_edges[_modifications]_tolerance ),
+in the process automatically creating a junction table (city_[projection]_edges[_modifications]_tolerance_vertices_pgr)
+-take a POI table ( city_[projection]_poi[_modifications])  and create a 
+POI table associated with pgr edge table (city_projection_poi[_modifications]_tolerance_pgr)
+
+-some queries scripts to check everything is working
+
+For hki and maw, the scripts are separate, but for kow and lan, all scripts are combined to one for each area, 
+called "place_32650_topo_poi.sql", namely, created topology for edges and associated POIs with those edges. 
+
+The process has been reordered and simplified as the most efficient, and the output files use the updated 
+naming conventions from "walkability naming conventions.txt".
+
+abbr.: hki = HK Island; maw = Mawan Island; kow = Kowloon and New Terriroty; lan = Lantau
+* we removed the airport island due to the lack of walking network.
+* kow is further divided into kow1 and new based on kowloon_zones and kowloon_buf50
+
+NEW/OLD TABLE NAMES:
+place_32650_edges_1_noded <-> place_32650_edges_noded_1_topo_1 -> topology network
+
+20/11/2018 Further explanation about the scoring for kowloon area and new territory area:
+-The original boundary for new territory is not well created, so I am creating another one called "new_terri_zone"
