@@ -1,0 +1,9 @@
+`2.data preparation` contains sql scripts that:
+
+
+
+abbr.: hki = HK Island; maw = Mawan Island; kow = Kowloon and New Terriroty; lan = Lantau
+* we removed the airport island due to the lack of walking network.
+
+NEW/OLD TABLE NAMES:
+place_32650_1_noded_resultspgr <-> place_32650_poi_resultspgr -> the POIs that are associated with all junctions
