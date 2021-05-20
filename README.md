@@ -4,7 +4,10 @@ The research outcome has been published on EPB, a renowned peer-reviewed journal
 ## To cite it:
 Zhao, J., Sun, G. and Webster, C., 2020. Walkability scoring: Why and how does a 3-dimensional pedestrian network matter?. Environment and Planning B: Urban Analytics and City Science, p.2399808320977871.
 
-## Find more in our lab
+## Walkability score results for Hong Kong 
+Results are published as a dashboard here: https://foa-hku.maps.arcgis.com/apps/dashboards/c00f56908d6b408b8da42a6804abe8d2
+
+## Find out more on our lab webpage
 https://www.ulab.hku.hk/walkability-scoring
 
 ## Acknowledgement
