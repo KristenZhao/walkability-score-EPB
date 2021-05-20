@@ -33,8 +33,8 @@ from sqlalchemy import create_engine
 #                SET VARIABLES!
 # =============================================================================
 
-conn_string = "host='localhost' dbname='DB_JIANTING_TEST' user='postgres' password='Hk2018'"
-sqlalchemy_create_engine_string = 'postgresql+psycopg2://postgres:Hk2018@localhost/DB_JIANTING_TEST'
+conn_string = "host='localhost' dbname='database' user='username' password='password'"
+sqlalchemy_create_engine_string = 'postgresql+psycopg2://postgres:password@localhost/database'
 dbschema= 'jz_handover'
 junction_table = 'jz_handover.hkmaw_32650_edges_1_noded_vertices_pgr' #change for five areas: hki, kow, new, lan, maw
 resultspgr_table = 'jz_handover.hkmaw_32650_poi_resultspgr'
